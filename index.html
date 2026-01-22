@@ -22,6 +22,13 @@
   object-fit: cover;
   display: block;
 }
+.carousel-img {
+  object-fit: cover;
+}
+
+.carousel img {
+  object-fit: cover;
+}
 
 </style>
 <body>
@@ -71,23 +78,48 @@
 </header>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+
+    <!-- Slide 1 -->
     <div class="carousel-item active">
-      <img src="./image/b1.png" class="d-block w-100" alt="...">
+      <!-- Desktop image -->
+      <img src="./image/b1.png"
+           class="d-none d-md-block w-100"
+           alt="Desktop banner">
+
+      <!-- Mobile image -->
+      <img src="./image/mobile1.jpg"
+           class="d-block d-md-none w-100"
+           alt="Mobile banner">
     </div>
+
+    <!-- Slide 2 -->
     <div class="carousel-item">
-      <img src="./image/b3.png" class="d-block w-100" alt="...">
+      <!-- Desktop image -->
+      <img src="./image/b3.png"
+           class="d-none d-md-block w-100"
+           alt="Desktop banner">
+
+      <!-- Mobile image -->
+      <img src="./image/mobile2.png"
+           class="d-block d-md-none w-100"
+           alt="Mobile banner">
     </div>
-   
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
+
 <section class="py-5 bg-light">
   <div class="container">
     
