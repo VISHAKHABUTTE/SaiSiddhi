@@ -17,13 +17,11 @@
   margin: 0;
   padding: 0;
 }
-    .carousel-item img {
-  height: 90vh;
-  object-fit: cover;
-  display: block;
+   @media (max-width: 767px) {
+  .carousel img { height: 350px; }
 }
-.carousel-img {
-  object-fit: cover;
+@media (min-width: 768px) {
+  .carousel img { height: 550px; }
 }
 
 .carousel img {
@@ -517,3 +515,4 @@
 </script>
 </body>
 </html>
+
